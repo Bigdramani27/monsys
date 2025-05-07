@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/nya.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose Role</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: #f4f6f8;
+    }
+
+    h1 {
+      margin-bottom: 50px;
+      font-size: 2.5rem;
+      color: #333;
+    }
+
+    .options {
+      display: flex;
+      gap: 60px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 200px;
+      height: 220px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+    }
+
+    .label {
+      font-size: 1.2rem;
+      color: #555;
+      font-weight: 600;
+    }
+    a {
+        text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Choose Your Path</h1>
+
+  <div class="options">
+    <a href="trainee/index.html" class="card">
+        <svg viewBox="0 0 36 36" width="85" height="85" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#31373D" d="M24 14H12s-5 6-5 10s11 11 11 11s11-7 11-11s-5-10-5-10z"></path><path fill="#292F33" d="M19.64 1.28c-.901-.704-2.377-.704-3.278 0L1.639 12.776c-.901.704-.901 1.856 0 2.56l14.722 11.495c.902.704 2.377.704 3.278 0l14.722-11.495c.902-.704.902-1.856 0-2.56L19.64 1.28z"></path><path fill="#394146" d="M19.64 1.28c-.901-.704-2.377-.704-3.278 0L1.639 12.776c-.901.704-.901 1.856 0 2.56l14.722 11.495c.901.704 2.377.704 3.278 0l14.723-11.495c.901-.704.901-1.856 0-2.56L19.64 1.28z"></path><path fill="#FCAB40" d="M8 25s-2 2-2 3v6s0 2 2 2s2-2 2-2v-6c0-1-2-3-2-3z"></path><circle fill="#FDD888" cx="8" cy="26" r="3"></circle><path fill="#FCAB40" d="M8.001 27a1 1 0 0 1-1-1v-3.958c-.042-.634.187-2.036 1.317-2.884l9.022-7.91a1 1 0 0 1 1.318 1.504l-9.08 7.958C8.974 21.166 9 21.982 9 21.99L9.002 26a1 1 0 0 1-1.001 1z"></path><circle fill="#31373D" cx="18" cy="13" r="3"></circle></g></svg>
+      <div class="label" style="padding-top: 20px;">Trainee</div>
+    </a>
+    <a href="trainer/index.html" class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Trainer Icon">
+      <div class="label">Trainer</div>
+    </a>
+  </div>
+
+</body>
+</html>

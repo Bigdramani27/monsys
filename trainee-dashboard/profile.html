@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Monsys - Trainee Profile</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="../trainee/assets/nya.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../trainee/assets/nya.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="../trainee/assets/nya.png" />
+  <link rel="mask-icon" href="../trainee/assets/nya.png" color="#00b4b6" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="description" content=" Dashboard">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+</head>
+
+<body>
+
+  <div id="app">
+
+    <nav id="navbar-main" class="navbar is-fixed-top">
+      <div class="navbar-brand">
+        <a class="navbar-item mobile-aside-button">
+          <span class="icon"><i class="mdi mdi-forwardburger mdi-24px"></i></span>
+        </a>
+      </div>
+      <div class="navbar-brand is-right">
+        <a class="navbar-item --jb-navbar-menu-toggle" data-target="navbar-menu" style="margin-right:20px">
+          <span class="icon"><i class="mdi mdi-dots-vertical mdi-24px"></i></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="navbar-menu">
+        <div class="navbar-end">
+          <div class="navbar-item dropdown has-divider has-user-avatar">
+            <a class="navbar-link">
+              <div class="user-avatar">
+                <img src="img/profile_pic/profile.png" class="rounded-full">
+              </div>
+              <div class="is-user-name"><span>Hello, Dramani</span></div>
+              <span class="icon"><i class="mdi mdi-chevron-down"></i></span>
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href='profile.html'>
+                <span class="icon"><i class="mdi mdi-settings"></i></span>
+                <span>Settings</span>
+              </a>
+              <a class="navbar-item" href='log_out.php'>
+                <span class="icon"><i class="mdi mdi-logout"></i></span>
+                <span>Log Out</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <aside class="aside is-placed-left is-expanded">
+      <div class="aside-tools">
+        <div>
+          <b class="font-black">Monsys</b>
+        </div>
+      </div>
+      <div class="menu is-menu-main">
+        <p class="menu-label">General</p>
+        <ul class="menu-list">
+          <li >
+            <a href="index.html">
+              <span class="icon"><i class="mdi mdi-desktop-mac"></i></span>
+              <span class="menu-item-label">Dashboard</span>
+            </a>
+          </li>
+          <li >
+            <a href="attendance.html">
+              <span class="icon"><i class="mdi mdi-timetable"></i></span>
+              <span class="menu-item-label">My Attendance</span>
+            </a>
+          </li>
+          <li>
+            <a href="performance.html">
+              <span class="icon"><i class="mdi mdi-chart-line"></i></span>
+              <span class="menu-item-label">My Performance</span>
+            </a>
+          </li>
+          <li >
+            <a href="certificate.html">
+              <span class="icon"><i class="mdi mdi-certificate"></i></span>
+              <span class="menu-item-label">My Certificate</span>
+            </a>
+          </li>
+        </ul>
+        <p class="menu-label">Personal</p>
+        <ul class="menu-list">
+          <li class="active">
+            <a href="profile.html">
+              <span class="icon"><i class="mdi mdi-exit-to-app"></i></span>
+              <span class="menu-item-label">Profile</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <section class="is-title-bar">
+      <div class="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
+        <ul>
+          <li>Dashboard</li>
+          <li>Profile</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section main-section">
+      <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 mb-6">
+        <div class="card mb-6">
+          <header class="card-header">
+            <p class="card-header-title">
+              <span class="icon"><i class="mdi mdi-account"></i></span>
+              Profile
+            </p>
+          </header>
+          <div class="card-content">
+            <div class="image">
+              <img src="img/profile_pic/profile.png" style='border-radius: 50%;width: 250px; height: 250px; margin-right:auto; margin-left:auto'>
+            </div>
+            <hr>
+            <div class="field">
+              <label class="label">Full Name</label>
+              <div class="control icons-left">
+                <input type="text" readonly value="Dramani Alhassan" class="input is-static"><span class="icon left"><i class="mdi mdi-account"></i></span>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">E-mail</label>
+              <div class="control icons-left">
+                <input type="text" readonly value="adramani96@gmail.com" class="input is-static"><span class="icon left"><i class="mdi mdi-mail"></i></span>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Phone Number</label>
+              <div class="control icons-left">
+                <input type="tel" class="input is-static" size='100' placeholder="eg. 548342821" id="phone_numbers" value="+233 548342821" readonly>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+  <script type="text/javascript" src="js/main.min.js?v=1628755089081"></script>
+
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css">
+  <script src="assets/js/intlTelInput.js"></script>
+  <script>
+    var phone_number = window.intlTelInput(document.querySelector("#phone_number"), {
+      separateDialCode: true,
+      preferredCountries: ["in"],
+      hiddenInput: "full",
+      utilsScript: "//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.js"
+    });
+
+    $("form").submit(function() {
+      var full_number = phone_number.getNumber(intlTelInputUtils.numberFormat.E164);
+      $("input[name='phones[full]'").val(full_number)
+    });
+  </script>
+  <script>
+    var phone_number = window.intlTelInput(document.querySelector("#phone_numbers"), {
+      separateDialCode: true,
+      preferredCountries: ["in"],
+      hiddenInput: "full",
+      utilsScript: "//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.js"
+    });
+  </script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ 
+</body>
+
+</html>

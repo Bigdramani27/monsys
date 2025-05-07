@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Monsys: Trainee Login</title>
+  <!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Favicon icon-->
+<link rel="shortcut icon" type="image/x-icon" href="assets/nya.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/theme.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+<div class="login-root">
+    <div class="box-root flex-flex flex-direction--column" style="min-height: 100vh;flex-grow: 1;">
+      <div class="loginbackground box-background--white padding-top--64">
+        <div class="loginbackground-gridContainer">
+          <div class="box-root flex-flex" style="grid-area: top / start / 8 / end;">
+            <div class="box-root" style="background-image: linear-gradient(white 0%, rgb(247, 250, 252) 33%); flex-grow: 1;">
+            </div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 4 / 2 / auto / 5;">
+            <div class="box-root box-divider--light-all-2 animationLeftRight tans3s" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 6 / 3/ auto / 1;">
+            <div class="box-root box-background--blue800 animationLeftLeft tans4s" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 7 / start / auto / 4;">
+            <div class="box-root box-background--blue animationLeftRight" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 8 / 4 / auto / 6;">
+            <div class="box-root box-background--gray100 animationLeftRight tans3s" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 2 / 15 / auto / end;">
+            <div class="box-root box-background--cyan200 animationRightLeft tans4s" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 3 / 14 / auto / end;">
+            <div class="box-root box-background--blue animationRightLeft" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 4 / 17 / auto / 20;">
+            <div class="box-root box-background--gray100 animationRightLeft tans4s" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 5 / 14 / auto / 17;">
+            <div class="box-root box-divider--light-all-2 animationRightLeft tans3s" style="flex-grow: 1;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+        <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
+          <img src="assets/nya.png" style="width: 60px;">
+        </div>
+        <div class="formbg-outer">
+          <div class="formbg">
+            <div class="formbg-inner padding-horizontal--48">
+              <a href="../index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i> Go Back </a>
+              <h3 style="text-align: center; font-weight:700">Trainer Login</h3>
+              <form id="stripe-login" >
+
+                <div class="field padding-bottom--24">
+                  <label for="email">Email/Phone Number</label>
+                  <input type="text" class='form-control'name="email" placeholder='Enter Your Email or Phone Number'>
+                </div>
+                <div class="field" style='padding-bottom:10px'>
+                  <label for="password">Password <span id="togglePassword" style='color:#cb241f; font-size:18px' class="fa fa-eye"></span></label>
+                  <input type="password" name="password" class='form-control' placeholder='Enter Your Password'>
+                </div>
+                <div style="text-align:right; padding-bottom:10px"><a href="" class='link'>Forgot password?</a></div>
+                <div class="field padding-bottom--24 col-12 d-grid" >
+                  <input type="submit"class='btn btn-primary' name="submit" value="Sign In">
+                </div>
+                <div class="field padding-bottom--24">
+                  <p style="text-align: center;">Don't have an account?<a href="register.html"> Register</a> </p>
+                  <br><a href="../index"><i class="fa fa-arrow-left" aria-hidden="true"></i> Go Home </a>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="footer-link padding-top--24">
+            <div class="listing padding-top--24 padding-bottom--24 flex-flex center-center">
+                 <span>© Monsys</span>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  const togglePassword = document.querySelector('#togglePassword');
+  const password = document.querySelector('#password');
+
+  togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+});
+</script>
+</body>
+
+</html>
