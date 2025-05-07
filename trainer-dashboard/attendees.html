@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Monsys - Trainee Dashboard</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="../trainee/assets/nya.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../trainee/assets/nya.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="../trainee/assets/nya.png" />
+  <link rel="mask-icon" href="../trainee/assets/nya.png" color="#00b4b6" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="description" content="Dashboard">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+</head>
+
+<body>
+  <div id="app">
+
+    <nav id="navbar-main" class="navbar is-fixed-top">
+      <div class="navbar-brand">
+        <a class="navbar-item mobile-aside-button">
+          <span class="icon"><i class="mdi mdi-forwardburger mdi-24px"></i></span>
+        </a>
+      </div>
+      <div class="navbar-brand is-right">
+        <a class="navbar-item --jb-navbar-menu-toggle" data-target="navbar-menu" style="margin-right:20px">
+          <span class="icon"><i class="mdi mdi-dots-vertical mdi-24px"></i></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="navbar-menu">
+        <div class="navbar-end">
+          <div class="navbar-item dropdown has-divider has-user-avatar">
+            <a class="navbar-link">
+              <div class="user-avatar">
+                <img src="img/profile_pic/profile.png" class="rounded-full">
+              </div>
+              <div class="is-user-name"><span>Hello, Dramani</span></div>
+              <span class="icon"><i class="mdi mdi-chevron-down"></i></span>
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href='profile.html'>
+                <span class="icon"><i class="mdi mdi-settings"></i></span>
+                <span>Settings</span>
+              </a>
+              <a class="navbar-item" href='../trainer/index.html'>
+                <span class="icon"><i class="mdi mdi-logout"></i></span>
+                <span>Log Out</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <aside class="aside is-placed-left is-expanded">
+      <div class="aside-tools">
+        <div>
+          <b class="font-black">Monsys</b>
+        </div>
+      </div>
+      <div class="menu is-menu-main">
+        <p class="menu-label">General</p>
+        <ul class="menu-list">
+          <li >
+            <a href="index.html">
+              <span class="icon"><i class="mdi mdi-desktop-mac"></i></span>
+              <span class="menu-item-label">Dashboard</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="attendees.html">
+              <span class="icon"><i class="mdi mdi-timetable"></i></span>
+              <span class="menu-item-label">Trainee Attendees</span>
+            </a>
+          </li>
+          <li>
+            <a href="attendance.html">
+              <span class="icon"><i class="mdi mdi-account-group"></i></span>
+              <span class="menu-item-label">My Attendance</span>
+            </a>
+          </li>
+          <li>
+            <a href="performance.html">
+              <span class="icon"><i class="mdi mdi-chart-line"></i></span>
+              <span class="menu-item-label">My Performance</span>
+            </a>
+          </li>
+          <li>
+            <a href="certificate.html">
+              <span class="icon"><i class="mdi mdi-certificate"></i></span>
+              <span class="menu-item-label">My Certificate</span>
+            </a>
+          </li>
+        </ul>
+        <p class="menu-label">Personal</p>
+        <ul class="menu-list">
+          <li>
+            <a href="profile.html">
+              <span class="icon"><i class="mdi mdi-exit-to-app"></i></span>
+              <span class="menu-item-label">Profile</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <section class="is-title-bar">
+      <div class="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
+        <ul>
+          <li>Trainer</li>
+          <li>Trainee Attendees</li>
+        </ul>
+      </div>
+    </section>
+    <section class="section main-section">
+      <div class="card has-table">
+        <header class="card-header">
+          <p class="card-header-title">
+            <span class="icon"><i class="mdi mdi-alpha-p-circle"></i></span>
+            All Trainees
+          </p>
+        </header>
+        <div class="card-content">
+          <table>
+            <thead>
+              <tr>
+                <th>Profile</th>
+                <th>First Name</th>
+                <th>Last Name </th>
+                <th>Phone</th>
+                <th>Marked Attendance Status</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td data-label="Profile" class="image-cell">
+                    <div class="image">
+                      <button class='--jb-modal'>
+                        <img src="img/profile_pic/profile.png
+                        "></button>
+                    </div>
+                  </td>
+                  <td data-label="First Name " style='font-weight:bold'>Dramani</td>
+                  <td data-label="Last Name " style='font-weight:bold'>Alhassasn</td>
+                  <td data-label="Phone ">+233 548342821</td>
+                  <td data-label="Marked Attendance Status" style="color: #028836; font-weight: bold;">Present</td>
+                  <td class="actions-cell">
+                    <div class="buttons right nowrap">
+                        <button class="button small red --jb-modal" data-target="absent" type="button">
+                          <span class="icon" style='font-weight:bold'>X</span>
+                        </button>
+                        <button class="button small green --jb-modal" data-target="present" type="button">
+                          <span class="icon"><i class="mdi mdi-check-bold"></i></span>
+                        </button>      
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Profile" class="image-cell">
+                    <div class="image">
+                      <button class='--jb-modal'>
+                        <img src="img/profile_pic/profile.png
+                        "></button>
+                    </div>
+                  </td>
+                  <td data-label="First Name " style='font-weight:bold'>Micheal</td>
+                  <td data-label="Last Name " style='font-weight:bold'>Boateng</td>
+                  <td data-label="Phone ">+233 548342822</td>
+                  <td data-label="Marked Attendance Status" style="color: #028836; font-weight: bold;">Present</td>
+                  <td class="actions-cell">
+                    <div class="buttons right nowrap">
+                        <button class="button small red --jb-modal" data-target="absent" type="button">
+                          <span class="icon" style='font-weight:bold'>X</span>
+                        </button>
+                        <button class="button small green --jb-modal" data-target="present" type="button">
+                          <span class="icon"><i class="mdi mdi-check-bold"></i></span>
+                        </button>      
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Profile" class="image-cell">
+                    <div class="image">
+                      <button class='--jb-modal'>
+                        <img src="img/profile_pic/profile.png
+                        "></button>
+                    </div>
+                  </td>
+                  <td data-label="First Name " style='font-weight:bold'>Lebron</td>
+                  <td data-label="Last Name " style='font-weight:bold'>James</td>
+                  <td data-label="Phone ">+233 548342820</td>
+                  <td data-label="Marked Attendance Status" style="color: #028836; font-weight: bold;">Present</td>
+                  <td class="actions-cell">
+                    <div class="buttons right nowrap">
+                        <button class="button small red --jb-modal" data-target="absent" type="button">
+                          <span class="icon" style='font-weight:bold'>X</span>
+                        </button>
+                        <button class="button small green --jb-modal" data-target="present" type="button">
+                          <span class="icon"><i class="mdi mdi-check-bold"></i></span>
+                        </button>      
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Profile" class="image-cell">
+                    <div class="image">
+                      <button class='--jb-modal'>
+                        <img src="img/profile_pic/profile.png
+                        "></button>
+                    </div>
+                  </td>
+                  <td data-label="First Name " style='font-weight:bold'>Steph </td>
+                  <td data-label="Last Name " style='font-weight:bold'>Curry</td>
+                  <td data-label="Phone ">+233 548342811</td>
+                  <td data-label="Marked Attendance Status" style="color: #cb2420; font-weight: bold;">Absent</td>
+                  <td class="actions-cell">
+                    <div class="buttons right nowrap">
+                        <button class="button small red --jb-modal" data-target="absent" type="button">
+                          <span class="icon" style='font-weight:bold'>X</span>
+                        </button>
+                        <button class="button small green --jb-modal" data-target="present" type="button">
+                          <span class="icon"><i class="mdi mdi-check-bold"></i></span>
+                        </button>      
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Profile" class="image-cell">
+                    <div class="image">
+                      <button class='--jb-modal'>
+                        <img src="img/profile_pic/profile.png
+                        "></button>
+                    </div>
+                  </td>
+                  <td data-label="First Name " style='font-weight:bold'>Jimmy </td>
+                  <td data-label="Last Name " style='font-weight:bold'>Butler</td>
+                  <td data-label="Phone ">+233 54834200</td>
+                  <td data-label="Marked Attendance Status" style="color: #cb2420; font-weight: bold;">Absent</td>
+                  <td class="actions-cell">
+                    <div class="buttons right nowrap">
+                        <button class="button small red --jb-modal" data-target="absent" type="button">
+                          <span class="icon" style='font-weight:bold'>X</span>
+                        </button>
+                        <button class="button small green --jb-modal" data-target="present" type="button">
+                          <span class="icon"><i class="mdi mdi-check-bold"></i></span>
+                        </button>      
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Profile" class="image-cell">
+                    <div class="image">
+                      <button class='--jb-modal'>
+                        <img src="img/profile_pic/profile.png
+                        "></button>
+                    </div>
+                  </td>
+                  <td data-label="First Name " style='font-weight:bold'>Tracy </td>
+                  <td data-label="Last Name " style='font-weight:bold'>Amoah</td>
+                  <td data-label="Phone ">+233 244827631</td>
+                  <td data-label="Marked Attendance Status" style="color: #cb2420; font-weight: bold;">Absent</td>
+                  <td class="actions-cell">
+                    <div class="buttons right nowrap">
+                        <button class="button small red --jb-modal" data-target="absent" type="button">
+                          <span class="icon" style='font-weight:bold'>X</span>
+                        </button>
+                        <button class="button small green --jb-modal" data-target="present" type="button">
+                          <span class="icon"><i class="mdi mdi-check-bold"></i></span>
+                        </button>      
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Profile" class="image-cell">
+                    <div class="image">
+                      <button class='--jb-modal'>
+                        <img src="img/profile_pic/profile.png
+                        "></button>
+                    </div>
+                  </td>
+                  <td data-label="First Name " style='font-weight:bold'>Rebecca </td>
+                  <td data-label="Last Name " style='font-weight:bold'>Etuaful</td>
+                  <td data-label="Phone ">+233 202939696</td>
+                  <td data-label="Marked Attendance Status" style="color: #cb2420; font-weight: bold;">Absent</td>
+                  <td class="actions-cell">
+                    <div class="buttons right nowrap">
+                        <button class="button small red --jb-modal" data-target="absent" type="button">
+                          <span class="icon" style='font-weight:bold'>X</span>
+                        </button>
+                        <button class="button small green --jb-modal" data-target="present" type="button">
+                          <span class="icon"><i class="mdi mdi-check-bold"></i></span>
+                        </button>      
+                    </div>
+                  </td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <div id="present" class="modal">
+      <div class="modal-background --jb-modal-close"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Trainee Present</p>
+        </header>
+        <section class="modal-card-body">
+          <p>Are you sure you this trainee is Present</p>
+        </section>
+        <footer class="modal-card-foot">
+          <form >
+            <button type='button' class="button --jb-modal-close">No</button>
+            <button type='button' class="button green  --jb-modal-close" name="Yes">Yes</button>
+          </form>
+        </footer>
+      </div>
+    </div>
+    <div id="absent" class="modal">
+      <div class="modal-background --jb-modal-close"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Trainee Absent</p>
+        </header>
+        <section class="modal-card-body">
+          <p>Are you sure you this trainee is Absent</p>
+        </section>
+        <footer class="modal-card-foot">
+          <form>
+            <button type='button' class="button --jb-modal-close">Cancel</button>
+            <button type='submit' class="button red --jb-modal-close" name="delete">Yes</button>
+          </form>
+        </footer>
+      </div>
+    </div>
+  <script type="text/javascript" src="js/main.min.js?v=1628755089081"></script>
+
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css">
+</body>
+
+</html>

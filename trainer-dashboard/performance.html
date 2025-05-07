@@ -70,7 +70,7 @@
                 <span class="icon"><i class="mdi mdi-settings"></i></span>
                 <span>Settings</span>
               </a>
-              <a class="navbar-item" href='../trainee/index.html'>
+              <a class="navbar-item" href='../trainer/index.html'>
                 <span class="icon"><i class="mdi mdi-logout"></i></span>
                 <span>Log Out</span>
               </a>
@@ -96,6 +96,12 @@
             </a>
           </li>
           <li >
+            <a href="attendees.html">
+              <span class="icon"><i class="mdi mdi-timetable"></i></span>
+              <span class="menu-item-label">Trainee Attendees</span>
+            </a>
+          </li>
+          <li >
             <a href="attendance.html">
               <span class="icon"><i class="mdi mdi-timetable"></i></span>
               <span class="menu-item-label">My Attendance</span>
@@ -117,7 +123,7 @@
         <p class="menu-label">Personal</p>
         <ul class="menu-list">
           <li>
-            <a href="log_out.php">
+            <a href="../trainer/index.html">
               <span class="icon"><i class="mdi mdi-exit-to-app"></i></span>
               <span class="menu-item-label">Profile</span>
             </a>
@@ -135,7 +141,7 @@
       </div>
     </section>
     <section class="section main-section">
-    <h2 style="font-size: 23px;">Overall Performance: <strong style="color: #61ce70;">92%</strong></h2>
+    <h2 style="font-size: 23px;">Overall Performance: <strong style="color: #61ce70;">97%</strong></h2>
     <div class="chart-container">
       <div class="chart-box">
         <canvas id="metricsBarChart"></canvas>
@@ -147,8 +153,8 @@
     </section>
   <script type="text/javascript" src="js/main.min.js?v=1628755089081"></script>
   <script>
-    const labels = ['Problem Solving', 'Technical Skills', 'Team Collaboration', 'Learning Agility', 'Communication', 'Time Management'];
-    const dataValues = [0.96, 0.93, 0.91, 0.94, 0.92, 0.86];;
+    const labels = ['Advanced Problem Solving', 'Expert Technical Knowledge', 'Expert Technical Knowledge', 'Adaptive Learning Strategy', 'Instructional Communication', 'Time Instructional Communication'];
+    const dataValues = [0.99, 0.98, 0.97, 0.99, 0.96, 0.93];
   
     // Bar Chart
     new Chart(document.getElementById('metricsBarChart'), {
